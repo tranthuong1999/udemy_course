@@ -1,0 +1,32 @@
+#main-container {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  // width: 100vw;
+  // height: 100vh;
+  gap: 10px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+#game_board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+
+  .list_item {
+    width: 100px;
+    height: 100px;
+
+    button {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.active_player {
+  border: 1px solid red;
+}
